@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Progress - AdoptMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container-xl">
+            <a class="navbar-brand" href="home.html">
+                <span class="display-font fs-3 text-primary">🐾 AdoptMe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="my_progress.html">My Progress</a></li>
+                </ul>
+                <a href="learn.html" class="btn btn-primary ms-3">Learn More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header bg-white py-4 border-bottom">
+        <div class="container-xl">
+            <h1 class="display-font mb-2">My Learning Progress</h1>
+            <p class="text-muted mb-0">Track your journey to becoming a responsible pet owner</p>
+        </div>
+    </section>
+
+    <!-- Stats Overview -->
+    <section class="py-4 bg-light">
+        <div class="container-xl">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <div class="progress-circle mx-auto mb-3" id="overallProgress">
+                                <span class="progress-value">0%</span>
+                            </div>
+                            <h6 class="mb-0">Overall Progress</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-book text-primary fs-1 mb-3"></i>
+                            <h3 class="mb-0" id="lessonsCompleted">0</h3>
+                            <p class="text-muted small mb-0">Lessons Completed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-clipboard-check text-success fs-1 mb-3"></i>
+                            <h3 class="mb-0" id="quizzesPassed">0</h3>
+                            <p class="text-muted small mb-0">Quizzes Passed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-trophy text-warning fs-1 mb-3"></i>
+                            <h3 class="mb-0" id="badgesEarned">0</h3>
+                            <p class="text-muted small mb-0">Badges Earned</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section class="py-5">
+        <div class="container-xl">
+            <!-- Nav Tabs -->
+            <ul class="nav nav-pills mb-4" id="progressTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="lessons-tab" data-bs-toggle="tab" data-bs-target="#lessons" type="button">
+                        <i class="bi bi-book me-2"></i>Lessons
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="quizzes-tab" data-bs-toggle="tab" data-bs-target="#quizzes" type="button">
+                        <i class="bi bi-clipboard-check me-2"></i>Quizzes
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="badges-tab" data-bs-toggle="tab" data-bs-target="#badges" type="button">
+                        <i class="bi bi-trophy me-2"></i>Badges
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content" id="progressTabsContent">
+                <!-- Lessons Tab -->
+                <div class="tab-pane fade show active" id="lessons" role="tabpanel">
+                    <div id="lessonsContent">
+                        <div class="row g-4">
+                            <!-- Mock lesson progress -->
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <h5 class="card-title mb-1">Pet Care Fundamentals</h5>
+                                                <p class="text-muted small mb-0">8 lessons</p>
+                                            </div>
+                                            <span class="badge bg-warning">In Progress</span>
+                                        </div>
+                                        <div class="progress mb-2" style="height: 8px;">
+                                            <div class="progress-bar" style="width: 37.5%"></div>
+                                        </div>
+                                        <p class="small text-muted mb-3">3 of 8 lessons completed</p>
+                                        <a href="learn.html" class="btn btn-sm btn-primary">Continue Learning</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-start mb-3">
+                                            <div>
+                                                <h5 class="card-title mb-1">Nutrition & Health</h5>
+                                                <p class="text-muted small mb-0">10 lessons</p>
+                                            </div>
+                                            <span class="badge bg-secondary">Not Started</span>
+                                        </div>
+                                        <div class="progress mb-2" style="height: 8px;">
+                                            <div class="progress-bar" style="width: 0%"></div>
+                                        </div>
+                                        <p class="small text-muted mb-3">0 of 10 lessons completed</p>
+                                        <a href="learn.html" class="btn btn-sm btn-outline-primary">Start Course</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quizzes Tab -->
+                <div class="tab-pane fade" id="quizzes" role="tabpanel">
+                    <div id="quizzesContent">
+                        <div class="row g-4">
+                            <!-- Mock quiz attempts -->
+                            <div class="col-md-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="icon-circle mb-3" style="width: 48px; height: 48px;">
+                                            <i class="bi bi-clipboard-check"></i>
+                                        </div>
+                                        <h5 class="card-title">Pet Care Basics</h5>
+                                        <div class="mb-3">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="small">Best Score:</span>
+                                                <span class="small fw-bold text-success">85%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span class="small">Attempts:</span>
+                                                <span class="small">2</span>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-sm btn-outline-primary w-100" onclick="retakeQuiz(1)">
+                                            Retake Quiz
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="icon-circle mb-3" style="width: 48px; height: 48px;">
+                                            <i class="bi bi-clipboard-check"></i>
+                                        </div>
+                                        <h5 class="card-title">Nutrition & Health</h5>
+                                        <div class="mb-3">
+                                            <p class="text-muted small mb-0">Not attempted yet</p>
+                                        </div>
+                                        <button class="btn btn-sm btn-primary w-100" onclick="startQuiz(2)">
+                                            Take Quiz
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="card border-0 shadow-sm h-100">
+                                    <div class="card-body">
+                                        <div class="icon-circle mb-3" style="width: 48px; height: 48px;">
+                                            <i class="bi bi-clipboard-check"></i>
+                                        </div>
+                                        <h5 class="card-title">Behavior & Training</h5>
+                                        <div class="mb-3">
+                                            <p class="text-muted small mb-0">Not attempted yet</p>
+                                        </div>
+                                        <button class="btn btn-sm btn-primary w-100" onclick="startQuiz(3)">
+                                            Take Quiz
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Badges Tab -->
+                <div class="tab-pane fade" id="badges" role="tabpanel">
+                    <div id="badgesContent">
+                        <div class="row g-4">
+                            <!-- Earned Badge -->
+                            <div class="col-md-3">
+                                <div class="card border-0 shadow-sm text-center h-100">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="bi bi-trophy-fill text-warning" style="font-size: 4rem;"></i>
+                                        </div>
+                                        <h6 class="mb-2">First Steps</h6>
+                                        <p class="small text-muted mb-2">Completed your first lesson</p>
+                                        <span class="badge bg-success">Earned</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Locked Badge -->
+                            <div class="col-md-3">
+                                <div class="card border-0 shadow-sm text-center h-100 opacity-50">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="bi bi-trophy text-muted" style="font-size: 4rem;"></i>
+                                        </div>
+                                        <h6 class="mb-2">Course Master</h6>
+                                        <p class="small text-muted mb-2">Complete an entire course</p>
+                                        <span class="badge bg-secondary">Locked</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card border-0 shadow-sm text-center h-100 opacity-50">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="bi bi-trophy text-muted" style="font-size: 4rem;"></i>
+                                        </div>
+                                        <h6 class="mb-2">Quiz Champion</h6>
+                                        <p class="small text-muted mb-2">Score 100% on any quiz</p>
+                                        <span class="badge bg-secondary">Locked</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="card border-0 shadow-sm text-center h-100 opacity-50">
+                                    <div class="card-body">
+                                        <div class="mb-3">
+                                            <i class="bi bi-trophy text-muted" style="font-size: 4rem;"></i>
+                                        </div>
+                                        <h6 class="mb-2">Pet Expert</h6>
+                                        <p class="small text-muted mb-2">Complete all courses</p>
+                                        <span class="badge bg-secondary">Locked</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 AdoptMe. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="about_us.html" class="text-white text-decoration-none">About</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="text-white text-decoration-none">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .nav-pills .nav-link {
+            color: var(--color-text);
+            border-radius: 0.5rem;
+            transition: var(--transition-base);
+        }
+        
+        .nav-pills .nav-link:hover {
+            background-color: rgba(45, 212, 191, 0.1);
+        }
+        
+        .nav-pills .nav-link.active {
+            background-color: var(--color-primary);
+        }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/my_progress.js"></script>
+</body>
+</html>

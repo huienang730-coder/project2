@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lessons - AdoptMe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/global.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+    <div class="container-xl">
+      <a class="navbar-brand" href="home.html"><span class="display-font fs-3 text-primary">🐾 AdoptMe</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+          <li class="nav-item"><a class="nav-link" href="my_progress.html">My Progress</a></li>
+        </ul>
+        <a href="learn.html" class="btn btn-primary ms-3">Learn More</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="page-header bg-white py-4 border-bottom">
+    <div class="container-xl">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <div>
+          <h1 class="display-font mb-0" id="courseTitle">Lessons</h1>
+          <p class="text-muted mb-0" id="courseDesc">Learn what you need before adopting.</p>
+        </div>
+        <div class="d-flex gap-2">
+          <a href="learn.html" class="btn btn-outline-secondary"><i class="bi bi-arrow-left me-2"></i>Back to Courses</a>
+          <a id="courseQuizBtn" href="#" class="btn btn-primary" style="display:none;"><i class="bi bi-ui-checks me-2"></i>Take Course Quiz</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container-xl">
+      <div id="state" class="text-muted">Loading lessons…</div>
+
+      <div id="lessonsGrid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style="display:none;"></div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container-xl">
+      <div class="row">
+        <div class="col-md-6"><p class="mb-0">&copy; 2025 AdoptMe. All rights reserved.</p></div>
+        <div class="col-md-6 text-md-end">
+          <a href="about_us.html" class="text-white text-decoration-none">About</a>
+          <span class="mx-2">|</span>
+          <a href="#" class="text-white text-decoration-none">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/lessons.js"></script>
+</body>
+</html>
