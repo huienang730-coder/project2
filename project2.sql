@@ -52,7 +52,26 @@ INSERT INTO animals
 (name, species, breed, date_of_birth, gender, temperament, ideal_home, lifestyle_needs, vaccination_status, health_issues, adoption_status)
 VALUES
 ('Mochi','Cat','Domestic Shorthair','2023-04-12','Female','Playful','Quiet home','Indoor play and scratching post','Up to date','', 'Available'),
+   
 ('Buddy','Dog','Golden Retriever','2022-01-20','Male','Friendly','Active home','Daily walks and training','Up to date','', 'Available');
+
+('Luna','Cat','British Shorthair','2021-08-05','Female','Calm and affectionate','Quiet indoor home','Daily play and brushing','Up to date','', 'Available'),
+
+('Max','Dog','Beagle','2020-11-14','Male','Energetic and curious','Active household','Daily walks and mental stimulation','Up to date','', 'Reserved'),
+
+('Snowball','Rabbit','Mini Lop','2022-06-10','Female','Gentle','Indoor enclosure','Hay-based diet and free-roam time','N/A','Sensitive digestion', 'Available'),
+
+('Charlie','Dog','Singapore Special','2019-03-22','Male','Loyal and alert','Experienced owner','Daily exercise and training','Up to date','Hip issues', 'Adopted'),
+
+('Whiskers','Cat','Maine Coon','2020-09-01','Male','Friendly and playful','Spacious home','Interactive toys and grooming','Up to date','', 'Available'),
+
+('Nibbles','Hamster','Syrian Hamster','2023-01-18','Female','Active at night','Quiet room','Wheel exercise and enrichment','N/A','', 'Available'),
+
+('Oreo','Rabbit','Netherland Dwarf','2021-12-02','Male','Shy but curious','Calm environment','Gentle handling and enrichment','N/A','Dental monitoring', 'Reserved'),
+
+('Bella','Dog','Poodle','2018-05-30','Female','Intelligent and calm','Indoor family home','Mental stimulation and grooming','Up to date','', 'Available');
+
+
 
 INSERT INTO animal_images (animal_id, image_type, image_path) VALUES
 (1,'front','93e2ae1c234e90c183e4790e489546af.png'),
