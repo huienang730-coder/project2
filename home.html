@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdoptMe - Find Your Perfect Companion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container-xl">
+            <a class="navbar-brand" href="home.html">
+                <span class="display-font fs-3 text-primary">🐾 AdoptMe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about_us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="animals.html">Animals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="my_progress.html">My Progress</a></li>
+                </ul>
+                <a href="learn.html" class="btn btn-primary ms-3">Learn More</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero py-5">
+        <div class="container-xl">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-1 fw-bold mb-4">
+                        Find Your Perfect Companion
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Discover loving animals waiting for their forever home. 
+                        Learn about responsible pet ownership and start your adoption journey today.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="animals.html" class="btn btn-primary btn-lg px-4">Browse Animals</a>
+                        <a href="learn.html" class="btn btn-outline-secondary btn-lg px-4">Start Learning</a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="row mt-5 g-4">
+                        <div class="col-4">
+                            <h3 class="display-font mb-0" id="animalCount">0</h3>
+                            <p class="text-muted small">Animals Available</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="display-font mb-0">50+</h3>
+                            <p class="text-muted small">Happy Adoptions</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="display-font mb-0">10+</h3>
+                            <p class="text-muted small">Learning Courses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800" 
+                             alt="Happy adopted dog" 
+                             class="img-fluid rounded-4 shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Cards Section -->
+    <section class="education-section py-5 bg-white">
+        <div class="container-xl">
+            <h2 class="text-center mb-5 display-font">Prepare for Pet Ownership</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Card 1 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm hover-lift uiverse-card">
+                        <div class="card-body p-4">
+                            <div class="icon-circle mb-3">
+                                <i class="bi bi-book fs-2"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Interactive Lessons</h3>
+                            <p class="text-muted mb-3">
+                                Learn the essentials of pet care through engaging, 
+                                step-by-step lessons covering nutrition, health, and behavior.
+                            </p>
+                            <a href="learn.html" class="btn btn-link p-0 text-primary text-decoration-none">
+                                Start Learning <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm hover-lift uiverse-card">
+                        <div class="card-body p-4">
+                            <div class="icon-circle mb-3">
+                                <i class="bi bi-clipboard-check fs-2"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Readiness Quiz</h3>
+                            <p class="text-muted mb-3">
+                                Test your knowledge and see if you're ready 
+                                to adopt your new companion with our comprehensive assessment.
+                            </p>
+                            <a href="learn.html" class="btn btn-link p-0 text-primary text-decoration-none">
+                                Take Quiz <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm hover-lift uiverse-card">
+                        <div class="card-body p-4">
+                            <div class="icon-circle mb-3">
+                                <i class="bi bi-trophy fs-2"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Earn Badges</h3>
+                            <p class="text-muted mb-3">
+                                Track your progress and earn achievement badges 
+                                as you complete courses and demonstrate your knowledge.
+                            </p>
+                            <a href="my_progress.html" class="btn btn-link p-0 text-primary text-decoration-none">
+                                View Progress <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Animals Section -->
+    <section class="featured-animals py-5">
+        <div class="container-xl">
+            <div class="text-center mb-5">
+                <h2 class="display-font">Meet Our Animals</h2>
+                <p class="text-muted">These lovable companions are waiting for their forever homes</p>
+            </div>
+            
+            <!-- Loading Skeleton -->
+            <div id="loadingSkeleton" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <div class="col" v-for="i in 3">
+                    <div class="card h-100">
+                        <div class="skeleton" style="height: 200px;"></div>
+                        <div class="card-body">
+                            <div class="skeleton mb-2" style="width: 60%; height: 24px;"></div>
+                            <div class="skeleton mb-2" style="width: 40%; height: 16px;"></div>
+                            <div class="skeleton" style="width: 100%; height: 60px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Featured Animals Grid -->
+            <div id="featuredAnimals" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" style="display: none;">
+                <!-- Populated dynamically -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="animals.html" class="btn btn-primary btn-lg px-5">View All Animals</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 bg-white">
+        <div class="container-xl">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-font mb-4">Ready to Make a Difference?</h2>
+                    <p class="lead text-muted mb-4">
+                        Every pet deserves a loving home. Start your adoption journey today 
+                        and bring home a new family member.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center flex-wrap">
+                        <a href="animals.html" class="btn btn-primary btn-lg">Find Your Pet</a>
+                        <a href="about_us.html" class="btn btn-outline-secondary btn-lg">Learn More About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container-xl">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="display-font mb-3">AdoptMe</h5>
+                    <p class="text-white-50">
+                        Connecting loving animals with caring families. 
+                        Join us in making a difference, one adoption at a time.
+                    </p>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="animals.html" class="text-white-50 text-decoration-none">Animals</a></li>
+                        <li><a href="about_us.html" class="text-white-50 text-decoration-none">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="mb-3">Learn</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="learn.html" class="text-white-50 text-decoration-none">Courses</a></li>
+                        <li><a href="my_progress.html" class="text-white-50 text-decoration-none">My Progress</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="mb-3">Contact</h6>
+                    <p class="text-white-50">
+                        <i class="bi bi-envelope me-2"></i>info@adoptme.com<br>
+                        <i class="bi bi-phone me-2"></i>(555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4 bg-white opacity-25">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0 text-white-50">&copy; 2025 AdoptMe. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white-50 text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/home.js"></script>
+</body>
+</html>
